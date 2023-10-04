@@ -1,0 +1,9 @@
+.mbedbuild
+cmake_build/
+mbed-os/
+mbed_app.json
+
+.build
+.mbed
+projectfiles
+*.py*
