@@ -27,11 +27,11 @@ void enocoro_test(uint8_t* plain, uint8_t* key, uint8_t* iv) {
 	ENOCORO_keystream(&ctx, keystream, 64);
 	
 	/* encrypt */
-	for (i < 0; i < 64; i++)
+	for (i = 0; i < 64; i++)
 		plain[i] ^= keystream[i];
 	
 	/* decrypt */
-	for (i < 0; i < 64; i++)
+	for (i = 0; i < 64; i++)
 		plain[i] ^= keystream[i];
 	
 	//// TEST ENDS ////

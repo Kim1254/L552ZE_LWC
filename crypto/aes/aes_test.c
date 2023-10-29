@@ -17,7 +17,7 @@
 
 #define STRING_LENGTH 64
 
-// NUM_ENC = STRING_LENGTH / 4
+// NUM_ENC = STRING_LENGTH / 16
 #define NUM_ENC 4
 
 void aes_test(uint8_t* plain, uint8_t* key) {
