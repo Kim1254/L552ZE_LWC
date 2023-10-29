@@ -3,7 +3,6 @@
 
 static void print_hex(const unsigned char* hex, int len)
 {
-	char hexstr[4];
 	for (const unsigned char* p = hex; p - hex < len; p++)
 		printf("%02X ", *p);
 	printf("\n");

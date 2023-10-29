@@ -22,8 +22,10 @@ add_subdirectory(${MBED_PATH})
 
 add_executable(${APP_TARGET}
     main.cpp
+	main.h
 )
 
+target_include_directories(${APP_TARGET} PRIVATE .)
 add_subdirectory(crypto)
 
 target_link_libraries(${APP_TARGET} mbed-os)

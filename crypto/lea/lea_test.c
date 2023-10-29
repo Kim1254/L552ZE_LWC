@@ -3,5 +3,5 @@
 #include "lea_test.h"
 #include "util.h"
 
-void lea_test(char* destination) {
+void lea_test(void) {
 }

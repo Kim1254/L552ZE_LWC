@@ -7,7 +7,7 @@
 extern "C" {
 #endif  /* __cplusplus */
 
-void aes_test(void);
+void aes_test(uint8_t*, uint8_t*);
 
 #ifdef __cplusplus
 }

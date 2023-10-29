@@ -7,7 +7,7 @@
 extern "C" {
 #endif  /* __cplusplus */
 
-void lea_test(char*);
+void lea_test(void);
 
 #ifdef __cplusplus
 }

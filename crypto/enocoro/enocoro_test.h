@@ -7,7 +7,7 @@
 extern "C" {
 #endif  /* __cplusplus */
 
-void enocoro_test(void);
+void enocoro_test(uint8_t*, uint8_t*, uint8_t*);
 
 #ifdef __cplusplus
 }
