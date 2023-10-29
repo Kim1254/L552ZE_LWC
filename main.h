@@ -39,7 +39,8 @@
 #include "lea_test.h"
 
 // Marcos
-#define DO_TEST lea_test()
+#define IV_REQUIRED
+#define DO_TEST lea_test(g_plain_text, g_key, g_iv)
 
 // end of LEA.
 
@@ -94,6 +95,7 @@ uint8_t g_plain_text[64] = {
 };
 
 // ENOCORO128 16
+// LEA128 16
 // TRIVIUM 10
 uint8_t g_key[16] = {
 	(uint8_t) 0x5d, (uint8_t) 0x6e, (uint8_t) 0x7f, (uint8_t) 0x80,
@@ -105,6 +107,7 @@ uint8_t g_key[16] = {
 #ifdef IV_REQUIRED
 
 // CLEFIA 16
+// LEA 16
 // ENOCORO 8
 // TRIVIUM 10
 uint8_t g_iv[16] = {

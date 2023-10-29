@@ -1,3 +1,6 @@
+#ifndef _LEA_CBC
+#define _LEA_CBC
+
 void MAKE_FUNC(cbc_enc)(unsigned char *ct, const unsigned char *pt, unsigned int pt_len, const unsigned char *iv, const LEA_KEY *key)
 {
 #ifdef USE_OWN_FUNC
@@ -90,3 +93,5 @@ void MAKE_FUNC(cbc_dec)(unsigned char *pt, const unsigned char *ct, unsigned int
 	XOR8x16(pt, pt, iv);
 
 }
+
+#endif

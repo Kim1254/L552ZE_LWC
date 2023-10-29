@@ -22,7 +22,7 @@
 //#define NO_SSE2
 //#define NO_PCLMUL
 //#define NO_NEON
-//#define NO_SIMD
+#define NO_SIMD
 
 /// Library Export 매크로
 #if LEA_LIB == 0 && !defined(EXPORT)
